@@ -32,7 +32,8 @@ body{
   left: 0;
   right: 0;
   bottom:0;
-   background-image:url("https://i.pinimg.com/originals/43/1b/eb/431bebcd4497e7ebaf143d26a53aaf5d.gif") ; 
+   /* background-image:url("https://i.pinimg.com/originals/43/1b/eb/431bebcd4497e7ebaf143d26a53aaf5d.gif") ;  */
+   background-image:url("https://gateway.pinata.cloud/ipfs/QmZ9U7bdjmFG2R2PdoKbAVjBRWZkRwDKxc9Gemc2VqmS37") ; 
   /* background-image:url("./assets/assets/background/parallax-bg.gif") ;  */
   background-size:cover;
   background-repeat:no-repeat;

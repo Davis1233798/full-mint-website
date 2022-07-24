@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ethers , BigNumber } from 'ethers';
 import WatsonMetaNFT from './WatsonMetaNFT.json';
+import { Text,Box,Button,Flex} from '@chakra-ui/react';
 
 const WatsonMetaNFTAddress = "0x1B56c4C7E421973b2c3b4bFDBE492d6c8E09B1F4";
 
@@ -38,20 +39,52 @@ const MainMint = ({accounts,setAccounts})=>{
         };
 
         return(
-        <div> 
-        <h1>WatsonMetaNFT</h1>
+        <Flex justify="center" align="center" height="100vh" paddingBottom="150px"> 
+        <Box width="520px">
+        <div>
+        <Text fontSize="48px" textShadow="0 5px 5px #00000">WatsonMetaNFT</Text>
+        </div>
         {isConnected ? (
             <div>
-                <div>
-                    <button onClick={handleDecrement}>-</button>
+                <Flex>
+                          <Button 
+                backgroundColor="#D6517D"
+                borderRadius="15px"
+                boxShadow="0px 3px 3px 1.5px #0F0F0F"
+                color="white"
+                cursor="pointer"
+                fontFamily="inherit"
+                padding="15px"
+                margin="0 15px"
+                onClick={handleDecrement}>-</Button>
                     <input type="number" value={mintAmount} />
-                    <button onClick={handleIncrement}>+</button>
-                </div>
+                          <Button 
+                backgroundColor="#D6517D"
+                borderRadius="15px"
+                boxShadow="0px 3px 3px 1.5px #0F0F0F"
+                color="white"
+                cursor="pointer"
+                fontFamily="inherit"
+                padding="15px"
+                margin="0 15px"
+                onClick={handleIncrement}>+</Button>
+                      <Button 
+                backgroundColor="#D6517D"
+                borderRadius="15px"
+                boxShadow="0px 3px 3px 1.5px #0F0F0F"
+                color="white"
+                cursor="pointer"
+                fontFamily="inherit"
+                padding="15px"
+                margin="0 15px"
+                onClick={handleMint}>Mint</Button>            
+                </Flex>
             </div>
         ) : (
         <p>You Must Connected To Mint</p>        
         )}        
-        </div>
+        </Box>
+        </Flex>
         );
 };
 
