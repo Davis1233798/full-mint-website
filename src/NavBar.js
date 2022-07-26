@@ -13,9 +13,10 @@ const NavBar = ( { accounts , setAccounts } )=>{
             setAccounts(accounts);
         }
     }
+    
 
     return(
-        <Flex justify="space-between" align="center" padding="20px ">
+        <Flex justify="space-between" align="center" padding="20px" w={[300, 400, 500]}>
             {/*Leftside*/}
             {/* <div>Facebook</div> */}
             {/* <Flex justify="space-around" width="40%" padding="0 35px"> */}
@@ -40,8 +41,7 @@ const NavBar = ( { accounts , setAccounts } )=>{
                <img 
                     height="40%"
                     width="20%"                    
-                    src="https://cdn-icons-png.flaticon.com/512/732/732068.png"
-                    boxShadow="0.3em 0.3em 0.3em black"
+                    src="https://cdn-icons-png.flaticon.com/512/732/732068.png"                    
                     alt="new"                                        
                 />
             </Link>
