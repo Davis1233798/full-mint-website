@@ -3,7 +3,7 @@ import { ethers, BigNumber } from 'ethers';
 import WatsonMetaNFT from './WatsonMetaNFT.json';
 import { Text, Box, Button, Flex } from '@chakra-ui/react';
 
-const WatsonMetaNFTAddress = "0x2339Db6b7E45597e367eC257225942eE5f1f727A";
+const WatsonMetaNFTAddress = "0x902291dfB4F34C11358Aa3aF8055205A2bb23D6c";
 
 
 const MainMint = ({ accounts, setAccounts }) => {
